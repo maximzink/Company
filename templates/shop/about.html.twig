@@ -1,0 +1,31 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center">відгуки та пропозиції</h2>
+    <div class="row">
+        <div class="col-sm-5">
+            <p>Наші контакти</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Lviv, Ukraine Rubchaka 2, str.</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +38 0633152386</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> maximzink@bigmir.net</p>
+        </div>
+        <div class="col-sm-7 slideanim">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Імя" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Коментарі" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Відправити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

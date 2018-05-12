@@ -1,0 +1,271 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <div class="jumbotron text-center">
+        <h1>Львівбудмонтаж</h1>
+        <p>Збудуємо для Вас</p>
+        <form>
+            <div class="input-group">
+                <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-primary">Підписатися</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>Про компанію Львівбудмонтаж</h2><br>
+                <h4>Команда молодих професіоналів будує надсучасні новобудови Львова та одночасно втілює найрізноматніші побажання майбутніх клієнтів</h4><br>
+                <p>Сучасні новобудови Львова красуються на кожному кроці, а от зручністю, екологічністю та комфортом похизується не кожен забудовник! Будівельна Компанія “Львівбудмонтаж” пропонує продаж квартир у Львові
+                    Надсучасні новобудови Львова від забудовника БК “Львівбудмонтаж” є із зручним плануванням та великою площею, що дозволить Вам втілити у реальність усі мрії. На цьому сайті Ви можете переглянути, обрати та купити квартиру у Львові від забудовника. Продаж квартир у Львові триває.</p>
+                <br><button class="btn btn-default btn-lg">Звязатися</button>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-signal logo1"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-grey">
+        <div class="row">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-globe logo slideanim"></span>
+            </div>
+            <div class="col-sm-8">
+                <h2>Наші цінності</h2><br>
+                <h4><strong>Місія:</strong>  Для справжнього сімейного щастя потрібна добротна оселя. Оселя, в якій затишно дітям і дорослим,
+                    в яку не соромно запросити друзів і родину. Оселя, якою можна пишатися. Корпорація „ЛЬВІВБУДМОНТАЖ” втілює в життя нелегку програму
+                    – виправляє ситуацію на ринку нового житла в нашій державі і пропонує громадянам України вдосконалені, світової якості оселі.
+                    До Вашого вибору різноманітні квартири оригінального планування зі спільною перевагою – великими кухнями-світлицями, що однозначно оцінять господині.</h4><br>
+                <p><strong>Бачення:</strong> Будівельна компанія “Львівбудмонтаж” не так давно святкувала свій перший успішний рік діяльності на львівському ринку нерухомості.
+                    Все швидше “Львівбудмонтаж” набирає популярності та поваги серед львів’ян, що обирають та шукають поєднання квартир із доступними цінами та хорошою якістю.
+                    Усі житлові комплекси від “Львівбудмонтаж” – це надсучасні квартири побудовані із сертифікованих матеріалів та комплектуючих. Всередині ЖК розташована “зелена зона”, дитячий майданчик та великий паркінг.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="services" class="container-fluid text-center">
+        <h2>Види робіт</h2>
+        <br>
+        <div class="row slideanim">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-off logo-small"></span>
+                <h4>Будівництво будинків</h4>
+                <p>Будуємо будинки будь якої складності.</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-heart logo-small"></span>
+                <h4>Проектування та дизайн</h4>
+                <p>Розробляємо проекти та дизайн будинків та квартир</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-lock logo-small"></span>
+                <h4>Ремонт під ключ</h4>
+                <p>Проводимо комплексні ремонти квартир</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="row slideanim">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-leaf logo-small"></span>
+                <h4>Озеленення</h4>
+                <p>Надаємо послуги з ландшавтного дизайну та озеленення</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-certificate logo-small"></span>
+                <h4>Оренда</h4>
+                <p>Надаємо в оренду будівельну техніку</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-wrench logo-small"></span>
+                <h4 style="color:#303030;">Монтажні роботи</h4>
+                <p>Проводимо всі види монтажних робіт</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio" class="container-fluid text-center bg-grey">
+        <h2>Фотогалерея</h2><br>
+        <h4>Здані будинки</h4>
+        <div class="row text-center slideanim">
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="{{ asset("/img/logo4.png")}}" alt="Гранд" width="300" height="300">
+                    <p><strong>Гранд</strong></p>
+                    <p>Елітний житловий комплекс</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="{{ asset("/img/logo6.jpg")}}" alt="Європа" width="300" height="300">
+                    <p><strong>Європа</strong></p>
+                    <p>Комфортний житловий комплекс</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="{{ asset("/img/logo2%20.jpg")}}" alt="Іпсилон" width="300" height="300">
+                    <p><strong>Іпсилон</strong></p>
+                    <p>Економний житловий комплекс</p>
+                </div>
+            </div>
+        </div><br>
+
+        <h2>Відгуки наших клієнтів</h2>
+        <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <h4>"Одне слово ЧУДОВО Просто мега крутиий комлекс Гранд, <br>паркінг величезний, дитячий майданчик, багато дерев. <br> Я в захваті!!"<br></h4>
+
+                </div>
+                <div class="item">
+                    <h4>"Чудове компанія будинок здали вчасно, дуже задоволений <br>якістю робіт !"</h4>
+                </div>
+                <div class="item">
+                    <h4>"Найкращі ціни на ринку. Рекомендую"<br></h4>
+                </div>
+            </div>
+
+
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="pricing" class="container-fluid">
+        <div class="text-center">
+            <h2>Ціни</h2>
+            <h4>Виберіть будинок згідно цінової категорії</h4>
+        </div>
+        <div class="row slideanim">
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Економ</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>1-2</strong> кімнатні квартири</p>
+                        <p><strong>35-60</strong>  м2</p>
+                        <p><strong></strong> Чудовий вибір для тих <br/>в кого обмежений бюджет</p>
+                        <p>Житлови комплекс <strong>Іпсилон</strong> </p>
+                        <p>вул.Городоцька <strong>254</strong></p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>від 10000</h3>
+                        <h4>за квадратний метр</h4>
+                        <button class="btn btn-lg">Докладніше</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Комфорт</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>2-3</strong> кімнатні квартири</p>
+                        <p><strong>53-78</strong> м2</p>
+                        <p><strong></strong>Найкраще співвідношення<br/> ціна-якість</p>
+                        <p>Житлови комплекс <strong>Європа</strong> </p>
+                        <p>вул.Стрийська  <strong>147</strong></p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>від 15000</h3>
+                        <h4>за квадратний метр</h4>
+                        <button class="btn btn-lg">Докладніше</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Бізнес</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>2-4</strong> кімнатні квартири</p>
+                        <p><strong>65-128</strong> м2</p>
+                        <p><strong></strong>Елітний житловий комплекс<br/> для найвибагливіших</p>
+                        <p>Житлови комплекс <strong>Гранд</strong> </p>
+                        <p>вул.Коновальця <strong>14</strong></p>
+
+                    </div>
+                    <div class="panel-footer">
+                        <h3>від 18000</h3>
+                        <h4>за квадратний метр</h4>
+                        <button class="btn btn-lg">Докладніше</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="container-fluid bg-grey">
+        <h2 class="text-center">відгуки та пропозиції</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p>Наші контакти</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Lviv, Ukraine Rubchaka 2, str.</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +38 0633152386</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> maximzink@bigmir.net</p>
+            </div>
+
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">Відправити</button>
+                    </div>
+                </div>
+            {{ form_end(form) }}
+
+
+            <div class="col-sm-7 slideanim">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Імя" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Коментарі" rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">Відправити</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="googleMap" style="height:400px;width:100%;"></div>
+    <script>
+        function myMap() {
+            var myCenter = new google.maps.LatLng(49.805712, 24.017424);
+            var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            var marker = new google.maps.Marker({position:myCenter});
+            marker.setMap(map);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApVS0dPje6v1XsfqNWCHnBGSs0mUp2VD8&callback=myMap"></script>
+
+   {% endblock %}
